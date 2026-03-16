@@ -1,0 +1,104 @@
+body, section {
+    background-color: #0b0221;
+    color: white;
+    border: none;
+}
+
+.nav {
+    color: #8A4FFF; 
+}
+
+a:hover {
+    color: rgb(128, 66, 187) !important;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    bottom: -4em;
+    right: -4em;
+    width: 64%;
+    height: 36%;
+    background: linear-gradient(135deg, #5f2cff, #7b3cff, #8f4dff, #4f8cff);
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.7;
+}
+
+img {
+    border-radius: 20px;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+img:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.text {
+    display: inline-block;
+    transition: all 0.4s ease;
+    color: #333;
+}
+
+.text:hover {
+    transform: scale(1.1) translateY(-3px);
+    color: #8A4FFF !important;
+    text-shadow: 2px 4px 8px rgba(138, 79, 255, 0.3);
+cursor: default;
+}
+
+.accordion-item {
+    background-color: rgba(106, 17, 203, 0.2) !important;
+    border: 1px solid rgba(143, 77, 255, 0.4) !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+  
+}
+
+.accordion-button {
+    background-color: transparent !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(143, 77, 255, 0.3) !important;
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-body {
+    background-color: transparent !important;
+    border-top: 1px solid rgba(143, 77, 255, 0.2);
+}
+
+.accordion-button:focus {
+    border-color: rgba(143, 77, 255, 0.6) !important;
+    box-shadow: 0 0 0 0.25rem rgba(143, 77, 255, 0.25) !important;
+}
+
+.card {
+    background-color: rgba(106, 17, 203, 0.2);
+    border: 1px solid rgba(143, 77, 255, 0.4);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background-color: rgba(106, 17, 203, 0.35);
+    box-shadow: 0 10px 30px rgba(143, 77, 255, 0.5);
+    border: 1px solid rgba(143, 77, 255, 0.8);
+}
+
+.card-title,
+.card-text {
+    color: #ffffff !important;
+}
